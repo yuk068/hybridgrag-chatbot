@@ -7,6 +7,7 @@ from PyPDF2 import PdfReader
 from docx import Document as DocxDocument
 from langchain.document_loaders import TextLoader
 from typing import List, Dict, Any
+import traceback
 
 def strip_markdown(text: str) -> str:
     """Simplify markdown text to plain text"""
